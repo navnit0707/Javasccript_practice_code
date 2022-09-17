@@ -12,7 +12,7 @@ body{
     width: 90px;
     cursor: pointer;
 }
-.whiteBox{
+.whiteBoxes{
     border-color: black;
     display: inline-block;
     margin: 5px;
