@@ -21,3 +21,11 @@ body{
     height: 100px;
     width: 100px;
 }
+
+.hold{
+    border : solid red 4px;
+}
+
+.hide{
+    display: none;
+}
