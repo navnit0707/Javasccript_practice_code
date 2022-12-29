@@ -83,6 +83,16 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
+const calDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => {
+    return acc + mov;
+  }, 0);
+
+  labelBalance.textContent = `${balance} EUR`;
+};
+
+calDisplayBalance(account1.movements);
+
 const createUsername = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -90,7 +100,6 @@ const createUsername = function (accs) {
       .split(' ')
       .map(name => name[0])
       .join('');
-    return username;
   });
 };
 
